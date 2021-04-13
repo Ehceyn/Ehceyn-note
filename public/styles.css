@@ -1,0 +1,199 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: #eee;
+  padding: 0 ;
+  background: radial-gradient(530px circle at 500px 0px, rgba(204, 204, 204, 0.33) 50%, transparent 50.2%),
+     radial-gradient(530px circle at 850px 0px, rgba(241, 52, 147, 0.158) 50%, transparent 50.2%),
+     radial-gradient(150px circle at 800px 400px, rgba(204, 204, 204, 0.20) 50%, transparent 50.6%) ,
+     radial-gradient(200px circle at 300px 400px, rgba(204, 204, 204, 0.20) 50%, transparent 50.5%) ,
+     radial-gradient(150px circle at 900px 700px, rgba(204, 204, 204, 0.25) 50%, transparent 50.6%) ,
+     radial-gradient(200px circle at 400px 700px, rgba(204, 204, 204, 0.25) 50%, transparent 50.5%) 
+     
+    ;
+  background-repeat: no-repeat;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f13493;
+  width: 100%;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+#searchdiv {
+  display: flex;
+  justify-content: space-between;
+  width: 458px;
+  margin-right: 420px;
+}
+
+#search {
+  width: 330px;
+  height: 25px;
+  border: none;
+  border-radius: 3px;
+  margin-left: 20px;
+  padding-left: 14px;
+  font-family: 'Montserrat';
+  font-size: 16px;
+  transition: 300ms all ease-in;
+}
+
+#search::placeholder {
+  padding-left: 14px;
+  color: rgba(190, 188, 189, 0.63);
+  letter-spacing: 2px;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 14px;
+  font-family: 'Montserrat';
+}
+
+#search:focus {
+  outline: none;
+  border: 0.2px solid rgba(241, 52, 147, 0.24);
+  border-radius: 13px;
+  border-radius: 3px;
+  transition: 300ms all ease-in;
+
+}
+
+#search:focus::placeholder {
+  color: white;
+}
+
+#search+button {
+  width: 70px;
+  height: 25px;
+  border: 2.5px solid rgba(241, 52, 147, 0.24);
+  border-radius: 3px;
+  margin-right: 17px;
+  font-family: 'McLaren';
+  background-color: #fff;
+  color: #f13493;
+
+}
+footer,#clear-all-btn {
+  /* position: absolute; */
+  clear: both;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+.note {
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  width: 240px;
+  margin: 32px;
+  float: left;
+}
+.note h1 {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+  color: #30041a;
+}
+.note p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: #3f0522;
+}
+
+.note button{
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  color: #f13493;
+  border: none;
+  width: 70px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+  transition: 200ms all ease-in;
+}
+
+#clear-all-btn{
+  margin-bottom: 30px;
+}
+#clear-all-btn button{
+   color: #f13493;
+   background-color: rgb(224, 222, 222);
+   border: none;
+   width: 100px;
+   height: 36px;
+   cursor: pointer;
+   outline: none;
+   transition: 200ms all ease-in;
+  
+}
+
+.note button:hover{
+  background-color: rgb(224, 222, 222);
+  color: rgb(255, 52, 147);
+}
+
+form {
+  position: relative;
+  width: 480px;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+form input,
+form textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+}
+form button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #f13493;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+  transition: 200ms all ease-in;
+}
+form button:hover{
+  background: #ce0e6e;
+
+}
+form button:disabled {
+  background: #746f63;
+
+}
